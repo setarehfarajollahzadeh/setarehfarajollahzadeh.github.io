@@ -5,54 +5,218 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Setareh Farajollahzadeh</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #2c333d;
+      background: #f7f9fc;
+      line-height: 1.55;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 48px auto;
+      padding: 0 28px;
+    }
+
+    header {
+      margin-bottom: 36px;
+      border-bottom: 1px solid #dfe5ec;
+      padding-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 8px 0;
+      font-weight: 500;
+    }
+
+    h1 a {
+      color: #111;
+      text-decoration: none;
+    }
+
+    nav {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      margin-right: 18px;
+      color: #1f63bd;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 34px;
+      align-items: start;
+      margin-top: 16px;
+    }
+
+    .profile-photo {
+      width: 260px;
+      max-width: 100%;
+      border-radius: 4px;
+      border: 1px solid #dfe5ec;
+      background: #ffffff;
+      display: block;
+    }
+
+    .bio p {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: #1f63bd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin-top: 38px;
+      margin-bottom: 18px;
+      font-weight: 500;
+      border-bottom: 1px solid #dfe5ec;
+      padding-bottom: 6px;
+      color: #1f2937;
+    }
+
+    .news-item {
+      margin-bottom: 14px;
+      font-size: 1.02rem;
+    }
+
+    .news-date {
+      font-weight: bold;
+      color: #2c333d;
+    }
+
+    footer {
+      margin-top: 52px;
+      padding-top: 16px;
+      border-top: 1px solid #dfe5ec;
+      color: #6b7280;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        margin: 30px auto;
+        padding: 0 18px;
+      }
+
+      .intro {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+
+      .profile-photo {
+        width: 220px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <h1>Setareh Farajollahzadeh</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="CV.pdf">CV</a>
-    </nav>
-  </header>
+  <div class="page">
+    <header>
+      <h1><a href="index.html">Setareh Farajollahzadeh</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="media.html">Media</a>
+        <a href="CV.pdf">CV</a>
+      </nav>
+    </header>
 
-  <main class="container">
-    <section class="intro">
-      <img src="assets/profile.jpg" alt="Photo of Setareh Farajollahzadeh" class="profile-photo" />
+    <main>
+      <section class="intro">
+        <img src="assets/profile.jpg" alt="Photo of Setareh Farajollahzadeh" class="profile-photo" />
 
-      <div class="bio">
-        <p>
-          I am an Assistant Professor of Operations Management at the Desautels Faculty of Management,
-          McGill University.
+        <div class="bio">
+          <p>
+            I am an Assistant Professor of Operations Management at the Desautels Faculty of Management,
+            McGill University.
+          </p>
+
+          <p>
+            My research is broadly in operations management, with interests in social impact,
+            revenue management, and pricing. I use mathematical modeling, optimization, and
+            data-driven methods to study how operational systems can improve efficiency,
+            fairness, and access.
+          </p>
+
+          <p>
+            My current projects study operational questions in socially important systems,
+            including restroom equity, peer-to-peer sharing networks, product release strategies,
+            demand estimation from bundle sales, diversity interventions in labor markets,
+            pricing experimentation, and AI-assisted crowdsourcing.
+          </p>
+
+          <p>
+            Before joining McGill, I received my Ph.D. in Operations Management from the
+            Rotman School of Management at the University of Toronto.
+          </p>
+
+          <p>
+            For more information, please see my <a href="CV.pdf">CV</a>.
+          </p>
+
+          <p>
+            <strong>Contact:</strong>
+            <a href="mailto:setareh.farajollahzadeh@mcgill.ca">setareh.farajollahzadeh@mcgill.ca</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2>News</h2>
+
+        <p class="news-item">
+          <span class="news-date">June 2026:</span>
+          I launched my new academic website.
         </p>
 
-        <p>
-          My research focuses on operations management, market design, decision analytics, and socially
-          important operational problems. I use mathematical modeling, optimization, and data-driven methods
-          to study how operational systems can improve efficiency, fairness, and access.
+        <p class="news-item">
+          <span class="news-date">2026:</span>
+          Several projects were selected for CORS and MSOM SIG presentations, including work on
+          AI-assisted crowdsourcing, robust one-shot price experimentation, labor-market diversity
+          interventions, and gender equality in operations management.
         </p>
 
-        <p>
-          Before joining McGill, I received my Ph.D. in Operations Management from the Rotman School of
-          Management at the University of Toronto.
+        <p class="news-item">
+          <span class="news-date">2025:</span>
+          My paper on interview-stage diversity interventions was accepted to ACM EAAMO 2025,
+          and an extended abstract appeared in ACM EC 2025.
         </p>
 
-        <p>
-          For more information, please see my <a href="CV.pdf">CV</a>.
+        <p class="news-item">
+          <span class="news-date">2024:</span>
+          Our teaching case, <em>Potty Parity: Restroom Design for a Stadium</em>, won the
+          INFORMS Case Competition.
         </p>
+      </section>
+    </main>
 
-        <p>
-          <strong>Contact:</strong> You can contact me at
-          <a href="mailto:setareh.farajollahzadeh at mcgill dot com">setarefarajollahzade@gmail.com</a>.
-        </p>
-      </div>
-    </section>
-
-    <section class="news">
-      <h2>News</h2>
-
-      <p><strong>June 2026:</strong> I launched my new academic website.</p>
-    </section>
-  </main>
+    <footer>
+      Last updated: June 2026
+    </footer>
+  </div>
 </body>
 </html>
